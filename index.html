@@ -5,6 +5,7 @@
     <meta charset="utf-8">
 
     <link href="html5-modal.css" rel="stylesheet">
+    <link href="html5-scrolling-modal.css" rel="stylesheet">
   </head>
   <body>
       <a href="index2.html"> Link test</a>
@@ -35,6 +36,26 @@
           </div>
       </div>
       
-      
+      <div>Example2</div>
+      <!-- Label used to open modal. -->
+<label for="MODAL_ID">Open modal</label>
+
+<!-- 'Input :checked' Hack to open/hide modal. 
+    /!\ Must be positioned just before modal block -->
+<input data-smodal-ctrl id="MODAL_ID" type="checkbox" hidden>
+<!-- Modal block -->
+<div data-smodal><!--
+    Positioning ELEMENT: use a label to allow user to close modal
+    --><label data-smodal-positioner data-smodal-closer for="MODAL_ID"></label><!--
+    OR A non-label ELEMENT to create a blocked modal.
+    --><div data-smodal-positioner></div><!--
+    MODAL Container
+    --><div data-smodal-container>
+        <!-- Put this label here if you want a non-blocking modal -->
+        <label for="MODAL_ID" data-smodal-closer></label>
+        <!-- Modal content container -->
+        <div data-smodal-content>Some cONTENT<!-- Put your content here ! --></div>
+    </div><!-- 
+--></div>
   </body>
 </html>
