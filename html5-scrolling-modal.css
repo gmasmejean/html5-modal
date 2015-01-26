@@ -14,10 +14,3 @@
 
 /* Display modal when input is checked */
 [data-smodal-ctrl]:checked + [data-smodal]{ height:100%; opacity:1; transition:opacity .3s;}
-
-
-
-
-
-
-
