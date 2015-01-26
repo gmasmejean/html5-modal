@@ -1,1 +1,37 @@
-Hello world
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Html5-modal</title>
+    <link href="html5-modal.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+      <div>Example One:</div>
+  
+      <!-- Label used to open modal -->
+      <label for="MODAL_ID">Open modal</label>
+      
+      <!-- 'Input :checked' Hack to open/hide modal -->
+      <input data-modal-ctrl id="MODAL_ID" type="checkbox" hidden>
+      <!-- Modal block -->
+      <div data-modal>
+          <!-- BACKGROUND -->
+          <!-- IF non-blocking modal: click on background hide modal -->
+          <label data-modal-backdrop for="MODAL_ID"></label>
+          <!-- ELSE: blocking modal: user can't hide modal. -->
+          <div data-modal-backdrop></div>
+          <!-- ENDIF -->
+              
+          <!-- MODAL Container -->    
+          <div data-modal-container>
+              <div data-modal-content>
+                  <!-- Put close action here if you want. -->
+                  <label data-modal-close for="MODAL_ID"></label>
+                  
+                  <!-- Put your content here ! -->
+              </div>
+          </div>
+      </div>
+      
+      
+  </body>
+</html>
