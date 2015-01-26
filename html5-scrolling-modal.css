@@ -1,0 +1,23 @@
+[data-smodal]{ position:fixed; top:0; left:-100%; width:200%; height:0; overflow:auto; overflow-x:hidden;
+    background:rgba(0,0,0,.7); transition:opacity .3s,heigth 0.01s ease .3s; z-index:100; opacity:0;}
+
+[data-smodal-positioner]{ height:100%; left:50%;}
+[data-smodal-positioner], [data-smodal-container]{ position:relative; display:inline-block; width:50%; 
+    vertical-align:middle; text-align:center;}
+[data-smodal-container]{ margin:60px 0; left:50%;}
+[data-smodal-container]::after{ content:" "; display:inline-block; height:100%; width:0; vertical-align:middle;}
+
+[data-smodal-content]{ display:inline-block; vertical-align:middle; max-width:70%; 
+    position:relative; right:100%; background:#FFF; text-align:left;}
+
+[data-smodal-container] > [data-smodal-closer]{ position:absolute; right:100%; top:-60px; width:100%; height:calc(100% + 120px);}
+
+/* Display modal when input is checked */
+[data-smodal-ctrl]:checked + [data-smodal]{ height:100%; opacity:1; transition:opacity .3s;}
+
+
+
+
+
+
+
