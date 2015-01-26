@@ -38,23 +38,20 @@
       
       <div>Example2</div>
       <!-- Label used to open modal. -->
-<label for="MODAL_ID">Open modal</label>
+<label for="MODAL_ID2">Open modal</label>
 
 <!-- 'Input :checked' Hack to open/hide modal. 
     /!\ Must be positioned just before modal block -->
-<input data-smodal-ctrl id="MODAL_ID" type="checkbox" hidden>
+<input data-smodal-ctrl id="MODAL_ID2" type="checkbox" hidden>
 <!-- Modal block -->
 <div data-smodal><!--
     Positioning ELEMENT: use a label to allow user to close modal
-    --><label data-smodal-positioner data-smodal-closer for="MODAL_ID"></label><!--
-    OR A non-label ELEMENT to create a blocked modal.
-    --><div data-smodal-positioner></div><!--
-    MODAL Container
+    --><label data-smodal-positioner data-smodal-closer for="MODAL_ID2"></label><!--
     --><div data-smodal-container>
         <!-- Put this label here if you want a non-blocking modal -->
-        <label for="MODAL_ID" data-smodal-closer></label>
+        <label for="MODAL_ID2" data-smodal-closer></label>
         <!-- Modal content container -->
-        <div data-smodal-content>Some cONTENT<!-- Put your content here ! --></div>
+        <div data-smodal-content>Some CONTENT<!-- Put your content here ! --></div>
     </div><!-- 
 --></div>
   </body>
