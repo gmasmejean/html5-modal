@@ -1,0 +1,12 @@
+
+
+.forever_gradient{
+    background: -webkit-linear-gradient(90deg, #5D4157 10%, #A8CABA 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #5D4157 10%, #A8CABA 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #5D4157 10%, #A8CABA 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #5D4157 10%, #A8CABA 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #5D4157 10%, #A8CABA 90%); /* W3C */
+}
+        
+.dawn_gradient{ background:linear-gradient(90deg, rgba(50, 2, 40, 0.65) 10%, rgba(55, 57, 76, 0.65) 90%),
+    linear-gradient(0deg, rgba(242, 126, 12, 0.65) 10%, rgba(2, 2, 2, 0.65) 90%); }
